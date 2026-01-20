@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "JavaScript Run",
             "cwd": "${workspaceFolder}",
             "runtimeExecutable": "node",
             "console": "integratedTerminal",
