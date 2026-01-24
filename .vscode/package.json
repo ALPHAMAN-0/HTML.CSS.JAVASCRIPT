@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node \"Day 0/LetConstVar.js\""
+    "start": "node \"Day2/date.js\""
   }
 }

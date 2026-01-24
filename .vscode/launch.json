@@ -14,7 +14,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/Day 0/LetConstVar.js"
+            "program": "${workspaceFolder}/Day2/date.js"
         }
     ]
 }

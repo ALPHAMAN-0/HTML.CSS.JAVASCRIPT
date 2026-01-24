@@ -63,3 +63,51 @@ console.log(undefined < 0)
 
 console.log("2" == 2)
 console.log("2" === 2)
+
+// summarise
+//Preimitive 
+// 1. number
+// 2. string
+// 3. boolean
+// 4. undefined
+// 5. null
+// 6. symbol
+// 7. bigint
+
+// Object
+
+// Type conversion
+// 1. to string
+// 2. to number
+// 3. to boolean
+
+// Comparision
+// 1. ==
+// 2. ===
+// 3. >
+// 4. <
+// 5. >=
+// 6. <=
+// 7. !=
+// 8. !==
+
+let myObject = {
+    name: "Siam",
+    age: 25,
+    isStudent: true
+}
+
+console.log(myObject)
+
+console.log(typeof myObject)
+
+const myFunction = function() {
+    console.log("This is my first function")
+}
+
+myFunction()
+
+//++++++++++++++++++++++++++++++++++++++++++++Memory Heap and Stack+++++++++++++++++++++++++++++++++++++++++++++++
+// Stack => Primitive Data Types
+// Heap => Non-Primitive Data Types (Objects, Arrays, Functions)
+
