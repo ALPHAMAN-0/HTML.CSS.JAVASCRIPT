@@ -8,13 +8,13 @@
             "type": "node",
             "request": "launch",
             "name": "JavaScript Run",
-            "cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}",
             "runtimeExecutable": "node",
             "console": "integratedTerminal",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/Day2/date.js"
+            "program": "${file}"
         }
     ]
 }
