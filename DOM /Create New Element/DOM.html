@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Create New Element Example</title>   
+</head>
+<body>
+   <div class="parent">
+        <!-- This is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+   </div>
+</body>
+    <script>
+           const parentDiv = document.querySelector('.parent');
+        //   console.log(parentDiv); 
+        //   console.log( parentDiv.childNodes);
+        //   console.log(parent.children[1].innerHTML);
+       
+        // for(let i=1;i<parentDiv.children.length;i++){
+        //     console.log(parentDiv.children[i].innerHTML);
+        // }
+
+        // console.log(parentDiv.firstElementChild);
+        // console.log(parentDiv.lastElementChild);
+
+        // const dayOne = document.querySelector('.day');
+        // console.log(dayOne);
+        // console.log(dayOne.parentElement);
+        // console.log(dayOne.children[1].innerHTML);
+        
+        const div = document.createElement('div');
+        console.log(div);
+
+        div.className = 'day';
+        div.id = Math.round(Math.random());
+        div.innerText = 'SIAM HOSSAIN'
+
+        
+        //parentDiv.appendChild(div);
+        //console.log("Nodes: ", parentDiv.childNodes);
+        
+        
+        document.body.appendChild(div);
+        console.log("Nodes: ", parentDiv.childNodes);
+    </script>
+</html>
