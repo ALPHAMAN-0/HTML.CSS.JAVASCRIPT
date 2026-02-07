@@ -1,0 +1,25 @@
+javaScript 
+     synchronous
+     single threaded  default
+
+execution context
+    execute one line of code at a time
+    console log 1
+    console log 2
+
+**each operation wait for the last one to complete before execution
+
+    call stack.  memory heap
+
+blocking code vs non blocking code
+
+blocking codev
+blocking the flow of program
+read file synchronous
+
+
+
+non blocking code
+dose not block execution 
+read file async
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+    <h2>Amazon Image</h2>
+    <ul id = "image">
+        <li><image width = "200px" id="photoshop" src="Image/1.png"></li>
+        <li><image width = "200px" id="cat" src="Image/2.png" ></li> <!--onclick="alert('cat')" this apporach bad because when system scale -->
+        <li><a href="https://www.google.com" id="google">Google</a></li>
+    </ul>
+</body>
+<script>
+    // document.getElementById('cat').onclick = function() {
+    //     alert("cat clicked");
+    // }
+    //best approach
+
+    //attache event listener to the element
+    //jQuery approach
+
+
+    // type,timestamp,defaultprevented
+    //target,toElement,srcElement,currentTartget
+    //clientX,clientY,screenX,screenY
+    // altkey,ctrlKey,shiftKey,keyCode
+
+  
+    //event propagation
+    //   document.getElementById('image').addEventListener('click', function(event) {
+    //     console.log("Checking inside the UI");
+    //     event.stopPropagation();
+    //     //alert("cat clicked");
+    // }, true);   
+    // document.getElementById('cat').addEventListener('click', function() {
+    //     console.log("cat clicked");
+        
+    // },true);
+    
+    // document.getElementById('google').addEventListener('click', function(event) {
+    //     console.log("google clicked");
+    //     event.preventDefault();
+    // }, false);
+
+    // document.querySelector('#image').addEventListener('click', function(event) {
+    //     console.log(event.target.id);
+    //     event.target.remove();
+    // }, true);
+
+</script>
+</html>
