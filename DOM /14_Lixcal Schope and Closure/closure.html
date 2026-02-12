@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure Example</title>
+</head>
+<body>
+    <h1>Closure Example</h1>
+
+    <button id="green">Green</button>
+    <button id="blue">Blue</button>
+     
+</body>
+<script>
+    function outer(){
+        let username = "John Doe";
+        function inner(){
+            console.log("Hello, " + username);
+        }
+        inner();
+    }
+    outer();
+    console.log("Trying to access username: " + username); // This will cause an error because username is not defined in this scope
+
+    function makeFunc(){
+        const name = "Closure Example";
+        function displayName(){
+            console.log("This is a " + name);
+        }        
+        return displayName;    
+    }
+
+    const myFunc = makeFunc();
+    myFunc(); // This will work because displayName has access to the name variable through closure
+</script>
+
+<script>
+  function ClickHandler(color) {
+    return function(){
+        document.body.style.backgroundColor = `${color}`;
+    }
+  }
+
+  document.querySelector("#green").addEventListener("click", ClickHandler("green"));
+  document.querySelector("#blue").addEventListener("click", ClickHandler("blue"));
+</script>
+</html>
