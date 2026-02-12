@@ -43,6 +43,9 @@ A comprehensive learning resource covering HTML, CSS, and JavaScript fundamental
 - [CSS Questions](./05-Interview-Questions/CSS.md)
 - [Coding Challenges](./05-Interview-Questions/Challenges.js)
 
+### Featured Projects
+- [🌐 Network Engineer Learning Roadmap](./Network%20Engineer%20Roadmap/) - Interactive roadmap for aspiring network engineers from junior to senior level
+
 ## 🚀 Getting Started
 
 ### Running JavaScript Files
