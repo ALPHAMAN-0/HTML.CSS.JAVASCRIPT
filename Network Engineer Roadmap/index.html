@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Engineer Learning Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 Network Engineer Learning Roadmap</h1>
+            <p class="subtitle">Your complete guide from Junior to Senior Network Engineer</p>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p class="progress-text">Progress: <span id="progressPercent">0</span>% Complete</p>
+        </div>
+
+        <div class="roadmap">
+            <!-- Phase 1: Fundamentals -->
+            <div class="phase">
+                <div class="phase-header" onclick="togglePhase('phase1')">
+                    <h2>📚 Phase 1: Networking Fundamentals (0-6 months)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="phase-content" id="phase1">
+                    <div class="topic">
+                        <input type="checkbox" id="topic1-1" onchange="updateProgress()">
+                        <label for="topic1-1">
+                            <strong>OSI Model & TCP/IP Stack</strong>
+                            <p>Learn the 7 layers of OSI model and how data flows through networks</p>
+                            <span class="resources">📖 Resources: Cisco NetAcad, Professor Messer</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic1-2" onchange="updateProgress()">
+                        <label for="topic1-2">
+                            <strong>IP Addressing & Subnetting</strong>
+                            <p>Master IPv4/IPv6 addressing, CIDR notation, and subnet calculations</p>
+                            <span class="resources">📖 Resources: SubnettingPractice.com, IPCalc tools</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic1-3" onchange="updateProgress()">
+                        <label for="topic1-3">
+                            <strong>Network Devices</strong>
+                            <p>Understand switches, routers, firewalls, and access points</p>
+                            <span class="resources">📖 Resources: CompTIA Network+ Study Guide</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic1-4" onchange="updateProgress()">
+                        <label for="topic1-4">
+                            <strong>Ethernet & LAN Technologies</strong>
+                            <p>Learn about MAC addresses, VLANs, and Layer 2 switching</p>
+                            <span class="resources">📖 Resources: Cisco CCNA courses</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic1-5" onchange="updateProgress()">
+                        <label for="topic1-5">
+                            <strong>Basic Network Troubleshooting</strong>
+                            <p>Master tools: ping, traceroute, nslookup, ipconfig/ifconfig</p>
+                            <span class="resources">📖 Resources: Wireshark tutorials, PacketLife</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 2: Routing & Switching -->
+            <div class="phase">
+                <div class="phase-header" onclick="togglePhase('phase2')">
+                    <h2>🔄 Phase 2: Routing & Switching (6-12 months)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="phase-content" id="phase2">
+                    <div class="topic">
+                        <input type="checkbox" id="topic2-1" onchange="updateProgress()">
+                        <label for="topic2-1">
+                            <strong>Routing Protocols</strong>
+                            <p>Master RIP, EIGRP, OSPF, and BGP routing protocols</p>
+                            <span class="resources">📖 Resources: Cisco CCNP, BGP4all.com</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic2-2" onchange="updateProgress()">
+                        <label for="topic2-2">
+                            <strong>Spanning Tree Protocol (STP)</strong>
+                            <p>Understand STP, RSTP, and MSTP for loop prevention</p>
+                            <span class="resources">📖 Resources: Cisco documentation, YouTube tutorials</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic2-3" onchange="updateProgress()">
+                        <label for="topic2-3">
+                            <strong>Advanced VLAN Configuration</strong>
+                            <p>Learn VLAN trunking, VTP, and inter-VLAN routing</p>
+                            <span class="resources">📖 Resources: GNS3 labs, Packet Tracer</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic2-4" onchange="updateProgress()">
+                        <label for="topic2-4">
+                            <strong>WAN Technologies</strong>
+                            <p>Study MPLS, SD-WAN, PPP, Frame Relay basics</p>
+                            <span class="resources">📖 Resources: SD-WAN documentation, Cisco WAN guides</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic2-5" onchange="updateProgress()">
+                        <label for="topic2-5">
+                            <strong>High Availability & Redundancy</strong>
+                            <p>Learn HSRP, VRRP, GLBP for network redundancy</p>
+                            <span class="resources">📖 Resources: Network redundancy guides</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 3: Network Security -->
+            <div class="phase">
+                <div class="phase-header" onclick="togglePhase('phase3')">
+                    <h2>🔒 Phase 3: Network Security (12-18 months)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="phase-content" id="phase3">
+                    <div class="topic">
+                        <input type="checkbox" id="topic3-1" onchange="updateProgress()">
+                        <label for="topic3-1">
+                            <strong>Firewall Technologies</strong>
+                            <p>Learn ACLs, stateful inspection, next-gen firewalls (NGFW)</p>
+                            <span class="resources">📖 Resources: Palo Alto, Fortinet, Cisco ASA docs</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic3-2" onchange="updateProgress()">
+                        <label for="topic3-2">
+                            <strong>VPN Technologies</strong>
+                            <p>Master IPsec, SSL VPN, site-to-site and remote access VPNs</p>
+                            <span class="resources">📖 Resources: StrongSwan, OpenVPN documentation</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic3-3" onchange="updateProgress()">
+                        <label for="topic3-3">
+                            <strong>Network Access Control (NAC)</strong>
+                            <p>Study 802.1X, RADIUS, TACACS+ authentication</p>
+                            <span class="resources">📖 Resources: FreeRADIUS, Cisco ISE guides</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic3-4" onchange="updateProgress()">
+                        <label for="topic3-4">
+                            <strong>Network Monitoring & IDS/IPS</strong>
+                            <p>Learn Snort, Suricata, and network traffic analysis</p>
+                            <span class="resources">📖 Resources: Security Onion, Snort documentation</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic3-5" onchange="updateProgress()">
+                        <label for="topic3-5">
+                            <strong>Security Best Practices</strong>
+                            <p>Understand zero trust, network segmentation, hardening</p>
+                            <span class="resources">📖 Resources: CIS benchmarks, NIST guidelines</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 4: Wireless & Modern Technologies -->
+            <div class="phase">
+                <div class="phase-header" onclick="togglePhase('phase4')">
+                    <h2>📡 Phase 4: Wireless & Modern Tech (18-24 months)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="phase-content" id="phase4">
+                    <div class="topic">
+                        <input type="checkbox" id="topic4-1" onchange="updateProgress()">
+                        <label for="topic4-1">
+                            <strong>Wireless Networking</strong>
+                            <p>Master WiFi 6/6E, 802.11 standards, wireless security (WPA3)</p>
+                            <span class="resources">📖 Resources: CWNA certification, Aruba/Cisco wireless</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic4-2" onchange="updateProgress()">
+                        <label for="topic4-2">
+                            <strong>Cloud Networking</strong>
+                            <p>Learn AWS VPC, Azure vNet, Google Cloud networking</p>
+                            <span class="resources">📖 Resources: AWS Solutions Architect, Azure Network Engineer</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic4-3" onchange="updateProgress()">
+                        <label for="topic4-3">
+                            <strong>Software-Defined Networking (SDN)</strong>
+                            <p>Understand OpenFlow, SDN controllers, network virtualization</p>
+                            <span class="resources">📖 Resources: Open vSwitch, OpenDaylight</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic4-4" onchange="updateProgress()">
+                        <label for="topic4-4">
+                            <strong>Network Function Virtualization (NFV)</strong>
+                            <p>Learn virtual routers, firewalls, and load balancers</p>
+                            <span class="resources">📖 Resources: VyOS, pfSense, containerized networking</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic4-5" onchange="updateProgress()">
+                        <label for="topic4-5">
+                            <strong>5G & IoT Networking</strong>
+                            <p>Explore 5G architecture, IoT protocols (MQTT, CoAP)</p>
+                            <span class="resources">📖 Resources: 3GPP specs, IoT documentation</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 5: Automation & DevOps -->
+            <div class="phase">
+                <div class="phase-header" onclick="togglePhase('phase5')">
+                    <h2>🤖 Phase 5: Network Automation (24-30 months)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="phase-content" id="phase5">
+                    <div class="topic">
+                        <input type="checkbox" id="topic5-1" onchange="updateProgress()">
+                        <label for="topic5-1">
+                            <strong>Python for Network Engineers</strong>
+                            <p>Master Python, Netmiko, Paramiko, NAPALM libraries</p>
+                            <span class="resources">📖 Resources: Network Programmability Basics, Automate the Boring Stuff</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic5-2" onchange="updateProgress()">
+                        <label for="topic5-2">
+                            <strong>APIs & REST</strong>
+                            <p>Learn REST APIs, NETCONF, RESTCONF for network management</p>
+                            <span class="resources">📖 Resources: Postman, Cisco DevNet, API documentation</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic5-3" onchange="updateProgress()">
+                        <label for="topic5-3">
+                            <strong>Infrastructure as Code (IaC)</strong>
+                            <p>Study Ansible, Terraform for network automation</p>
+                            <span class="resources">📖 Resources: Ansible Network Automation, Terraform docs</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic5-4" onchange="updateProgress()">
+                        <label for="topic5-4">
+                            <strong>Version Control & CI/CD</strong>
+                            <p>Master Git, GitHub/GitLab, CI/CD pipelines for networks</p>
+                            <span class="resources">📖 Resources: Git documentation, Jenkins, GitLab CI</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic5-5" onchange="updateProgress()">
+                        <label for="topic5-5">
+                            <strong>Network Telemetry & Observability</strong>
+                            <p>Learn streaming telemetry, Grafana, Prometheus, ELK stack</p>
+                            <span class="resources">📖 Resources: Telegraf, InfluxDB, network observability guides</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 6: Advanced & Specialization -->
+            <div class="phase">
+                <div class="phase-header" onclick="togglePhase('phase6')">
+                    <h2>🎓 Phase 6: Advanced Topics & Specialization (30+ months)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="phase-content" id="phase6">
+                    <div class="topic">
+                        <input type="checkbox" id="topic6-1" onchange="updateProgress()">
+                        <label for="topic6-1">
+                            <strong>Advanced Certifications</strong>
+                            <p>Pursue CCIE, JNCIE, or cloud networking certifications</p>
+                            <span class="resources">📖 Resources: Cisco Learning Network, Juniper Learning Portal</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic6-2" onchange="updateProgress()">
+                        <label for="topic6-2">
+                            <strong>Network Architecture Design</strong>
+                            <p>Learn to design enterprise, data center, and campus networks</p>
+                            <span class="resources">📖 Resources: Network design patterns, Cisco Press books</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic6-3" onchange="updateProgress()">
+                        <label for="topic6-3">
+                            <strong>Troubleshooting Mastery</strong>
+                            <p>Advanced debugging with Wireshark, tcpdump, packet analysis</p>
+                            <span class="resources">📖 Resources: Wireshark certification, packet analysis books</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic6-4" onchange="updateProgress()">
+                        <label for="topic6-4">
+                            <strong>Performance Optimization</strong>
+                            <p>Study QoS, traffic engineering, network capacity planning</p>
+                            <span class="resources">📖 Resources: QoS guides, traffic engineering papers</span>
+                        </label>
+                    </div>
+                    <div class="topic">
+                        <input type="checkbox" id="topic6-5" onchange="updateProgress()">
+                        <label for="topic6-5">
+                            <strong>Leadership & Soft Skills</strong>
+                            <p>Develop team leadership, project management, communication skills</p>
+                            <span class="resources">📖 Resources: PMP, team leadership courses, technical writing</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommended Certifications -->
+        <div class="certifications">
+            <h2>🏆 Recommended Certifications Path</h2>
+            <div class="cert-timeline">
+                <div class="cert-item">
+                    <strong>Entry Level:</strong> CompTIA Network+, CCNA
+                </div>
+                <div class="cert-item">
+                    <strong>Associate:</strong> CCNP, JNCIA, AWS Certified Advanced Networking
+                </div>
+                <div class="cert-item">
+                    <strong>Professional:</strong> CCIE, JNCIE, Security certifications (CISSP)
+                </div>
+                <div class="cert-item">
+                    <strong>Specialist:</strong> Wireless (CWNA/CWNE), Cloud (AWS/Azure/GCP)
+                </div>
+            </div>
+        </div>
+
+        <!-- Resources Section -->
+        <div class="resources-section">
+            <h2>📚 Essential Resources</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>Practice Labs</h3>
+                    <ul>
+                        <li>GNS3 - Network simulator</li>
+                        <li>EVE-NG - Emulated Virtual Environment</li>
+                        <li>Cisco Packet Tracer</li>
+                        <li>AWS/Azure Free Tier</li>
+                    </ul>
+                </div>
+                <div class="resource-card">
+                    <h3>Online Platforms</h3>
+                    <ul>
+                        <li>Cisco DevNet</li>
+                        <li>Juniper Learning Portal</li>
+                        <li>Udemy & Coursera</li>
+                        <li>YouTube (NetworkChuck, David Bombal)</li>
+                    </ul>
+                </div>
+                <div class="resource-card">
+                    <h3>Communities</h3>
+                    <ul>
+                        <li>Reddit: r/networking, r/ccna</li>
+                        <li>Discord: Network Engineering servers</li>
+                        <li>Stack Overflow</li>
+                        <li>LinkedIn Network Engineer groups</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>💡 <strong>Pro Tips:</strong> Build a home lab, contribute to open-source projects, document your learning, network with professionals, and stay updated with industry trends!</p>
+            <p class="author">Created for aspiring network engineers 🚀</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

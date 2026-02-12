@@ -1,11 +1,13 @@
+const fetchData = async () => {
+    try {
+        const response = await fetch('https://api.github.com/users/ALPHAMAN-0');
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+};
+
+fetchData();
 
 
-function f2() {
-    const a = 4;
-    const f4 = () => {
-        console.log(a);
-    };
-
-    f4();
-}
-f2();
