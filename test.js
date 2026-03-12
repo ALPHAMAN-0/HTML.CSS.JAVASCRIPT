@@ -1,11 +1,18 @@
+const accountId = 123;
+
+let accountEmail = "siam.cse.aiub.learnig";
+var accountPassword = "myPassword123";
+
+// accountId = 456; we can not do this beacuse accountId is constant
+
+// Main differecne between let and var
+var x = 5;
+var x = 10;
+
+let y = 15;
+// let y = 20; we can not do this beacuse y is declared with let
 
 
-function f2() {
-    const a = 4;
-    const f4 = () => {
-        console.log(a);
-    };
+console.log(accountId)
 
-    f4();
-}
-f2();
+console.table([accountEmail, accountPassword]);
