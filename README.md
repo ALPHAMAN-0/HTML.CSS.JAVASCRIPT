@@ -1,76 +1,109 @@
-1`  # HTML, CSS & JavaScript - Complete Guide 🚀
+# HTML, CSS & JavaScript - Learning Repository
 
-A comprehensive learning resource covering HTML, CSS, and JavaScript fundamentals, advanced concepts, and interview preparation.
+A comprehensive learning repository covering web development fundamentals from HTML and CSS basics through advanced JavaScript concepts, DOM manipulation, API integration, object-oriented programming, and data structures. Includes 95+ mini-projects, university lab work, and hands-on exercises.
 
-## 📚 Table of Contents
+---
 
-### JavaScript Fundamentals
-- [Variables (let, const, var)](./01-JavaScript-Fundamentals/01-Variables.js)
-- [Data Types](./01-JavaScript-Fundamentals/02-DataTypes.js)
-- [Operators](./01-JavaScript-Fundamentals/03-Operators.js)
-- [Control Flow](./01-JavaScript-Fundamentals/04-ControlFlow.js)
-- [Functions](./01-JavaScript-Fundamentals/05-Functions.js)
-- [Arrays](./01-JavaScript-Fundamentals/06-Arrays.js)
-- [Objects](./01-JavaScript-Fundamentals/07-Objects.js)
-- [Loops](./01-JavaScript-Fundamentals/08-Loops.js)
+## Contents
 
-### JavaScript Advanced Topics
-- [Closures](./02-JavaScript-Advanced/01-Closures.js)
-- [Hoisting](./02-JavaScript-Advanced/02-Hoisting.js)
-- [Scope & Scope Chain](./02-JavaScript-Advanced/03-Scope.js)
-- [this Keyword](./02-JavaScript-Advanced/04-This.js)
-- [Prototypes & Inheritance](./02-JavaScript-Advanced/05-Prototypes.js)
-- [Promises & Async/Await](./02-JavaScript-Advanced/06-Promises.js)
-- [Event Loop](./02-JavaScript-Advanced/07-EventLoop.js)
-- [ES6+ Features](./02-JavaScript-Advanced/08-ES6Features.js)
+| Folder | Description | Key Concepts |
+|--------|-------------|--------------|
+| `HTML Introduction/` | HTML fundamentals and document structure | Tags, attributes, semantic HTML, page layout |
+| `CSS Introduction/` | CSS styling fundamentals | Selectors, properties, box model, layout |
+| `JavaScript Introduction/` | JavaScript basics organized by day | Variables, data types, arrays, objects, functions, control flow, iterations, scope, IIFE, arrow functions |
+| `DOM/` | Document Object Model deep dive (14 lessons) | DOM selectors, element creation, editing/removal, events, async code, API requests, promises, OOP, prototypes, call/bind, getters/setters, closures |
+| `API/` | API integration with JavaScript | GET requests, fetch API, HTTP methods |
+| `Problem Solve Using JS DSA/` | Data Structures and Algorithms in JavaScript | Problem solving, algorithmic thinking |
+| `95+Projects/` | Collection of standalone mini-projects | Practical application of HTML, CSS, and JS |
+| `Projects Using HTML CSS & JavaScript/` | Larger projects combining all three technologies | Registration forms, video players |
+| `AIUB/` | University (AIUB) lab tasks and assignments | Academic exercises, lab tasks |
+| `Roshni/` | Portfolio and test projects | Portfolio design, experimentation |
 
-### HTML Topics
-- [HTML Basics](./03-HTML/01-Basics.html)
-- [Semantic HTML](./03-HTML/02-Semantic.html)
-- [Forms & Validation](./03-HTML/03-Forms.html)
-- [HTML5 Features](./03-HTML/04-HTML5.html)
+---
 
-### CSS Topics
-- [CSS Basics](./04-CSS/01-Basics.css)
-- [Flexbox](./04-CSS/02-Flexbox.html)
-- [Grid](./04-CSS/03-Grid.html)
-- [Responsive Design](./04-CSS/04-Responsive.css)
-- [Animations](./04-CSS/05-Animations.css)
+### DOM Lessons Breakdown
 
-### Interview Questions
-- [JavaScript Questions](./05-Interview-Questions/JavaScript.md)
-- [HTML Questions](./05-Interview-Questions/HTML.md)
-- [CSS Questions](./05-Interview-Questions/CSS.md)
-- [Coding Challenges](./05-Interview-Questions/Challenges.js)
+| Lesson | Topic | Description |
+|--------|-------|-------------|
+| `01_All DOM selector` | DOM Selectors | getElementById, querySelector, querySelectorAll |
+| `02_Create New Element` | Element Creation | createElement, appendChild, insertBefore |
+| `03_Edit And Remove DOM` | DOM Modification | Editing content, removing elements |
+| `04_Projects_04` | DOM Projects | Four mini-projects applying DOM concepts |
+| `05_Event` | Events | Event listeners, event delegation, event objects |
+| `06_Async Code` | Asynchronous JavaScript | Callbacks, event loop, async patterns |
+| `07_API request and V8 engine` | API and V8 | Fetch API, XMLHttpRequest, V8 engine internals |
+| `08_Promise on Javascript` | Promises | Promise creation, chaining, error handling |
+| `09_OOP` | Object-Oriented Programming | Classes, constructors, methods, encapsulation |
+| `10_Prototype` | Prototypes | Prototype chain, new keyword, object inheritance |
+| `11_CAll And Blind` | Call, Bind, Apply | Function context, method borrowing, class patterns |
+| `12_Now You know Objects` | Advanced Objects | Math.PI, object internals, property descriptors |
+| `13_Getters and setters` | Accessors | Getter/setter methods, computed properties |
+| `14_Lixcal Schope and Closure` | Scope and Closures | Lexical scope, closure patterns, practical uses |
 
-## 🚀 Getting Started
+---
 
-### Running JavaScript Files
-```bash
-# Run specific file
-node <filename>.js
+### JavaScript Introduction (Day-by-Day)
 
-# Or use npm script
-npm start
-```
+| Day | Topics Covered |
+|-----|---------------|
+| Day 0 | Introduction, basics, getting started |
+| Day 1 | Data types, type coercion, primitives vs references |
+| Day 2 | Math object, Date object, built-in methods |
+| Day 3 | Arrays (creation, methods, iteration), Objects (creation, access, nesting) |
+| Day 4 | Control flow, functions, arrow functions, IIFE, scopes, iterations, object APIs |
+| Day 5 | Advanced patterns and practice |
 
-### Debugging in VS Code
-Press `F5` to launch the debugger with the current file.
+---
 
-## 📖 Learning Path
+### 95+ Projects
 
-1. Start with **JavaScript Fundamentals**
-2. Progress to **Advanced Topics**
-3. Learn **HTML & CSS** in parallel
-4. Practice with **Interview Questions**
-5. Build projects to apply your knowledge
+| Project | Description |
+|---------|-------------|
+| `Project_1` | Price Range Slider with Min-Max Input |
+| `Project_2` | Standalone mini-project |
+| `Github Profile Search` | GitHub user profile search using the GitHub API |
 
-## 🤝 Contributing
+---
 
-Feel free to add more examples, fix bugs, or improve documentation!
+## Prerequisites
 
-## 📝 License
+- A modern web browser (Chrome, Firefox, Edge)
+- A code editor such as VS Code
+- **Node.js** (optional, for running JavaScript files outside the browser)
+- Basic computer literacy
 
-MIT License - Feel free to use for learning purposes.
+---
 
+## How to Use
 
+1. Clone this repository:
+   ```bash
+   git clone <repository-url>
+   cd HTML.CSS.JAVASCRIPT
+   ```
+
+2. Start with the introductory folders in order:
+   - `HTML Introduction/` -- Learn document structure
+   - `CSS Introduction/` -- Learn styling
+   - `JavaScript Introduction/` -- Follow Day 0 through Day 5
+
+3. Progress to DOM manipulation:
+   - Work through `DOM/` lessons 01 through 14 sequentially
+
+4. Practice with projects:
+   - Open any project's `index.html` in your browser
+   - Explore `95+Projects/` for hands-on practice
+   - Build along with `Projects Using HTML CSS & JavaScript/`
+
+5. Challenge yourself:
+   - Solve problems in `Problem Solve Using JS DSA/`
+   - Explore `API/` for backend integration
+
+---
+
+## Resources
+
+- [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [MDN Web Docs - CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [MDN Web Docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [JavaScript.info](https://javascript.info/)
