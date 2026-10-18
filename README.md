@@ -5,12 +5,13 @@ A comprehensive learning repository covering web development fundamentals from H
 ## Architecture / How it Works
 
 ```mermaid
-flowchart LR
-    A[User] --> B[HTML.CSS.JAVASCRIPT]
-    B --> C{Logic}
-    C --> D[(Data)]
-    C --> E[Output]
-    D --> C
+flowchart TD
+    n1["HTML Introduction"] --> n2["JavaScript Introduction"]
+    n2 --> n3["DOM"]
+    n3 --> n4["API"]
+    n3 --> n5["95+Projects"]
+    n3 --> n6["Projects Using HTML CSS & JavaScript"]
+    n7["AIUB"]
 ```
 
 
