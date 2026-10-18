@@ -2,6 +2,18 @@
 
 A comprehensive learning repository covering web development fundamentals from HTML and CSS basics through advanced JavaScript concepts, DOM manipulation, API integration, object-oriented programming, and data structures. Includes 95+ mini-projects, university lab work, and hands-on exercises.
 
+## Architecture / How it Works
+
+```mermaid
+flowchart LR
+    A[User] --> B[HTML.CSS.JAVASCRIPT]
+    B --> C{Logic}
+    C --> D[(Data)]
+    C --> E[Output]
+    D --> C
+```
+
+
 ---
 
 ## Contents
